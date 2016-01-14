@@ -1,0 +1,184 @@
+@media screen and (min-width: 801px) {
+	body {
+		background-image:url("../css/images/backend.jpg");
+	}
+	
+	* {
+		font-family: arial;
+		font:bold 16px Helvetica, Verdana, Arial, sans-serif;
+	}
+
+	#loginError {
+		text-align: center;
+		color: red;
+	}
+
+	#form {
+		text-align: center;
+	}
+
+	#botonEntrar {
+		padding-bottom: 1em;
+	}
+
+	#botones {
+		margin-top: 1.5em;
+	}
+
+	.boton {
+		width: 8em;
+		background: #4477a1;
+		background: -webkit-gradient(linear, left top, left bottom, from(#81a8cb), to(#4477a1) );
+		background: -moz-linear-gradient(-90deg, #81a8cb, #4477a1);
+	}
+
+	.boton:hover {
+		background: #81a8cb;
+		background: -webkit-gradient(linear, left top, left bottom, from(#4477a1), to(#81a8cb) );
+		background: -moz-linear-gradient(-90deg, #4477a1, #81a8cb);
+		filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#4477a1', endColorstr='#81a8cb');            
+	}
+
+	.boton:active {
+		background: #4477a1;
+	}
+
+	.campo {
+		width: 100%;
+	}
+
+	.input {
+	 	padding: 10px;
+	 	border:solid 1px black;
+	 	border-radius: 5px;
+	}
+
+	.input:focus {
+	 	box-shadow: 0 0 15px;
+	 	color: blue;
+		border-color: lightblue;
+	}
+
+	h1 {
+		font-size: 2.5em;
+		text-align: center;
+	}
+
+	label {
+		font-weight: bold;
+	}
+}
+
+@media screen and (min-width: 400px) and (max-width: 800px) {
+	#form {
+		text-align: center;
+	}
+
+	#botonEntrar {
+		padding-bottom: 1em;
+	}
+
+	#botones {
+		margin-top: 1.5em;
+	}
+
+	.boton {
+		width: 8em;
+		background: #4477a1;
+		background: -webkit-gradient(linear, left top, left bottom, from(#81a8cb), to(#4477a1) );
+		background: -moz-linear-gradient(-90deg, #81a8cb, #4477a1);
+	}
+
+	.boton:hover {
+		background: #81a8cb;
+		background: -webkit-gradient(linear, left top, left bottom, from(#4477a1), to(#81a8cb) );
+		background: -moz-linear-gradient(-90deg, #4477a1, #81a8cb);
+		filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#4477a1', endColorstr='#81a8cb');            
+	}
+
+	.boton:active {
+		background: #4477a1;
+	}
+
+	.campo {
+		width: 100%;
+	}
+
+	.input {
+	 	padding: 10px;
+	 	border:solid 1px black;
+	 	border-radius: 5px;
+	}
+
+	.input:focus {
+	 	box-shadow: 0 0 15px;
+	 	color: blue;
+		border-color: lightblue;
+	}
+
+	h1 {
+		text-align: center;
+	}
+
+	label {
+		font-weight: bold;
+	}
+}
+
+@media screen and (max-width: 399px) {
+	#form {
+		text-align: center;
+	}
+
+	#botonEntrar {
+		padding-bottom: 1em;
+	}
+
+	#botones {
+		margin-top: 1.5em;
+	}
+
+	.boton {
+		width: 5em;
+		background: #4477a1;
+		background: -webkit-gradient(linear, left top, left bottom, from(#81a8cb), to(#4477a1) );
+		background: -moz-linear-gradient(-90deg, #81a8cb, #4477a1);
+	}
+
+	.boton:hover {
+		background: #81a8cb;
+		background: -webkit-gradient(linear, left top, left bottom, from(#4477a1), to(#81a8cb) );
+		background: -moz-linear-gradient(-90deg, #4477a1, #81a8cb);
+		filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#4477a1', endColorstr='#81a8cb');            
+	}
+
+	.boton:active {
+		background: #4477a1;
+	}
+
+	.campo {
+		width: 100%;
+	}
+
+	.input {
+		width: 50%;
+	 	padding: 10px;
+	 	border:solid 1px black;
+	 	border-radius: 5px;
+	}
+
+	.input:focus {
+	 	box-shadow:0 0 15px;
+	 	color: blue;
+		border-color: lightblue;
+	}
+
+	h1 {
+		font-size: 1.5em;
+		text-align: center;
+	}
+
+	label {
+		font-weight: bold;
+	}
+}

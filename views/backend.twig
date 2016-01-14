@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../../css/backend.css" rel="stylesheet" type="text/css">
+        <link href="../../css/bootstrap/bootstrap.min.css" rel="stylesheet" media="screen">
+        <link rel="stylesheet" type="text/css" href="../../css/datatable/jquery.dataTables.min.css">
+        <script src="../../lib/js/jquery.js"></script>
+        <script src="../../lib/js/bootstrap.min.js"></script>
+        <script type="text/javascript" charset="utf-8" src="../../lib/js/jquery.dataTables.min.js"></script>
+        <!--Exportar a PDF-->
+        <script src="../../lib/js/dataTables.buttons.min.js"></script>
+        <script src="../../lib/js/pdfmake.min.js"></script>
+        <script src="../../lib/js/vfs_fonts.js"></script>
+        <script src="../../lib/js/buttons.html5.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="../../css/datatable/buttons.dataTables.min.css">
+
+        <title>Operaciones - Escuela Anexa</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse" role="navigation">
+            <div class="navbar-header"> <!--Esto es para que se adapte responsivamente-->
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <!--Aca comienza el menú -->
+            <div class="navbar-collapse collapse">
+                <ul class="nav nav-pills navbar-left">
+                    <li>
+                        <a href="../Home/index"><span class="glyphicon glyphicon-home"></span></a>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Consultas<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../Alumno/matriculasPagas">Matriculas pagas</a></li>
+                            <li><a href="../Alumno/cuotasPagas">Cuotas/Becas pagas</a></li>
+                            <li><a href="../Alumno/cuotasVencidas">Cuotas vencidas</a></li>
+                            <li><a href="../Alumno/estadisticas">Estadisticas</a></li>
+                        </ul>
+                    </li>
+                    {% if(session.rol == 'gestion' or session.rol == 'administrador') %}
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Gestion<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="../Cuota/controlCuota">Control de cuotas</a></li>
+                                <li><a href="../Cuota/vistaGestionarCuotas">Gestionar cuotas</a></li>
+                                <li><a href="../Alumno/recorridos">Recorridos</a></li>
+                            </ul>
+                        </li>
+                    {% endif %}
+                    {% if(session.rol == 'administrador') %}
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Administrar<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="../Usuario/controlUsuario">Control de usuarios</a></li>
+                                <li><a href="../Alumno/controlAlumno">Control de alumnos</a></li>
+                                <li><a href="../Responsable/controlResponsable">Control de responsables</a></li>
+                                <li><a href="../Configuracion/configuracionSitio">Configuracion del sitio</a></li>
+                            </ul>
+                        </li>
+                    {% endif %}
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="../Home/vistaBackend" class="navbar-brand">Bienvenido, {{ session.username }}</a></li>
+                    <li><a href="../Logout" class="navbar-brand">Cerrar Sesión</a></li>
+                </ul>
+            </div>
+            <!--Aca termina el menú -->
+        </nav>
+        <!-- Espacio para colocar el contenido de la opción seleccionada -->
+        <div id="content">
+            {% block content %}{% endblock %}
+        </div>
+        <!-- Configuración de la datatable -->
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('#tabla').DataTable({
+                    "aaSorting":[],
+                    "dom": 'Bfrtip',
+                    "buttons": [
+                        {
+                            "extend": 'pdfHtml5',
+                            "download": 'open'
+                        }
+                    ],
+                    "language": {
+                        "infoEmpty": "",
+                        "emptyTable": "No hay datos disponibles",
+                        "search": "Buscar:",
+                        "info": "Mostrando pagina _PAGE_ de _PAGES_",
+                        "paginate":{
+                            "first": "Primero",
+                            "last": "Ultimo",
+                            "next": "Siguiente",
+                            "previous": "Anterior"
+                        }
+                    },
+                    "lengthChange": false,
+                    "aLengthMenu": [[{{ session.elementos }}],[{{ session.elementos }}]],
+                });
+            });
+        </script>
+
+    </body>
+</html>

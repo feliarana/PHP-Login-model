@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<link href="../../css/login.css" rel="stylesheet" type="text/css" />
+		<title>Iniciar sesión</title>
+	</head>
+	<body>
+		<h1>Ingreso al sistema</h1>
+		<div id="loginError">{{ var }}</div>
+		<div id="form">
+			<form name="login" action="../Session/login" method="post" accept-charset="utf-8">
+				<div class="campo">
+					<p>
+						<label>Usuario:</label>
+					</p>
+		  			<input type="text" class="input" name="username" pattern=".{2,20}" required title="Ingrese un mínimo de 2 carácteres, máximo 20">
+		  		</div>
+		  		<div class="campo">
+					<p>
+		  				<label>Contraseña:</label>
+		  			</p>
+					<input type="password" class="input" name="password" pattern=".{6,30}" required title="Ingrese un mínimo de 6 carácteres, máximo 30">
+		  		</div>
+		  		<div id="botones">
+		  			<div id="botonEntrar">
+		  				<input type="submit" class="boton" value="Entrar">
+		  			</div>
+		  		</div>
+			</form>
+			<div class="botonCancelar">
+				<form action="../Home/vistaFrontend">
+		  			<button class="boton" value="Cancelar">Cancelar</button>
+		  		</form>
+		  	</div>
+		</div>
+	</body>
+</html>

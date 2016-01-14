@@ -1,0 +1,178 @@
+@media screen and (min-width: 801px) {
+	* {
+		color:white;
+	}
+	.body {
+		width: 100%;
+	    height: auto;
+		background-image: url("../css/images/frontend-background.jpg");
+	}
+
+	.centrado {
+		text-align: center;
+	}
+
+	.encabezado {
+		text-align: right;
+		margin-right: 1em;
+	}
+
+	.cuerpo {
+		margin-left: 1.3em;
+		margin-right: 1.3em;
+		font-family: arial;
+	}
+
+	.informacion {
+		padding-bottom: 1em;
+		font-family:  inherit, arial, times; 
+	}
+
+	.establecimiento {
+		padding-bottom: 1em;
+		font-weight: bolder;
+	}
+
+	#titulo {
+		font-weight: bold;
+		text-align: center;
+		margin-top: 2em;
+		margin-bottom: 2em;
+	}
+
+	#subtitulo {
+		font-weight: bolder;
+		text-align: left;
+		margin-top: 2em;
+		margin-bottom: 2em;
+	}
+
+	#nav {
+		font-family: "Verdana", arial, Sans-Serif;
+		text-align: left;
+		background-color: #FFA347;
+		padding-bottom: 2em;
+	}
+
+	#notfound {
+	    width: 540px;
+	    height: auto;
+	}
+
+	span {
+		font-weight: bolder;
+	}
+
+	a {
+		text-decoration: none;
+		color: white;
+	}
+}
+
+@media screen and (min-width: 400px) and (max-width: 800px) {
+	#titulo {
+		font-weight: bold;
+		text-align: center;
+		margin-top: 2em;
+		margin-bottom: 2em;
+	}
+
+	#subtitulo {
+		font-weight: bolder;
+		text-align: left;
+		margin-top: 2em;
+		margin-bottom: 2em;
+	}
+
+	#nav {
+		font-family: "Verdana", arial, Sans-Serif;
+		font-size: 0.75em;
+		text-align: left;
+		background-color: #FFA347;
+		padding-bottom: 1em;
+	}
+
+	.encabezado {
+		text-align: right;
+		margin-right: 0.5em;
+	}
+
+	.cuerpo {
+		margin-left: 1em;
+		margin-right: 1em;
+		font-family: arial;
+	}
+
+	.informacion {
+		padding-bottom: 1em;
+		font-family: inherit, arial, times; 
+	}
+
+	.establecimiento {
+		padding-bottom: 1em;
+		font-weight: bolder;
+	}
+
+	span {
+		font-weight: bolder;
+	}
+
+	a {
+		text-decoration: none;
+		color: darkblue;
+	}
+}
+
+@media screen and (max-width: 399px) {
+	#titulo {
+		font-weight: bold;
+		text-align: center;
+		margin-top: 2em;
+		margin-bottom: 2em;
+	}
+
+	#subtitulo {
+		font-weight: bolder;
+		text-align: left;
+		margin-top: 2em;
+		margin-bottom: 2em;
+	}
+
+	#nav {
+		font-family: "Verdana", arial, Sans-Serif;
+		font-size: 0.6em;
+		text-align: left;
+		background-color: #FFA347;
+		padding-bottom: 0.25em;
+	}
+
+	.encabezado {
+		text-align: right;
+		margin-right: 0.2em;
+	}
+
+	.cuerpo {
+		margin-left: 0.5em;
+		margin-right: 0.5em;
+		font-family: arial;
+	}
+
+	.informacion {
+		padding-bottom: 1em;
+		font-family: inherit, arial, times; 
+	}
+
+	.establecimiento {
+		padding-bottom: 1em;
+		font-weight: bolder;
+	}
+
+	span {
+		font-weight: bolder;
+	}
+
+	a {
+		text-decoration: none;
+		color: darkblue;
+	}
+}

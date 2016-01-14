@@ -1,0 +1,202 @@
+@media screen and (min-width: 801px) {
+	body {
+		background-image: url("../../css/images/backend-background.jpg");
+		width: 100%;
+	    height: auto;
+		background-color: lightblue;
+	}
+
+	#img-circle{
+		width="100";
+		height="100";
+	}
+
+	a {
+		text-decoration: none;
+		color: darkblue;
+	}
+
+	.centrado {
+		text-align: center;
+	}
+
+	.rojo {
+		color: red;
+	}
+
+	#error {
+		text-align: center;
+		margin-bottom: 1.3em;
+		font-size: 1.2em;
+		color: red;
+	}
+
+	#exito {
+		text-align: center;
+		margin-bottom: 1.3em;
+		font-size: 1.2em;
+		color: green;
+	}
+
+	#margen {
+		margin-bottom: 1.5em;
+	}
+
+	#content {
+		
+	}
+
+	#saludo {
+		font-weight: bold;
+		text-align: right;
+	}
+
+	#session {
+		text-align: right;
+	}
+
+	#nav {
+		text-align: left;
+		background-color: #FFA347;
+		padding-bottom: 2em;
+	}
+
+	#navItem {
+		background-color: #FF7519;
+		float: right;
+		text-align: center;
+		text-decoration: none;
+	}
+
+	/*---------------- Menu de listados del medio --------------*/
+	
+	#ul.listados{
+    	border:3px solid #FFFFFF;
+    	padding: 10px;
+		margin:auto;
+		padding:0;
+		list-style-type:none;
+		display:block;
+		line-height:165%;
+		width:250px;
+	}
+
+	#ul.listados li{
+		margin:0;
+		padding:0;
+		border-top:1px solid #4D0000;
+		border-bottom:1px solid #761A1A;
+	}
+
+	#ul.listados li a{
+		display:block;
+		text-decoration:none;
+		color:#fff;
+		background:#600;
+		padding:0 0 0 20px;
+		width:230px;
+	}
+
+	ul.listados li a:hover{
+		background:#900
+	}
+}
+
+@media screen and (min-width: 400px) and (max-width: 800px) {
+	* {
+		font-family: arial;
+	}
+
+	body {
+		background-color: lightblue;
+	}
+
+	h3 {
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+
+	a {
+		text-decoration: none;
+		color: darkblue;
+	}
+
+	#saludo {
+		font-weight: bold;
+		text-align: right;
+	}
+
+	#session {
+		text-align: right;
+	}
+
+	#menu {
+		float: center;
+		background-color: #F2F5A9;
+	}
+
+	#nav {
+		font-family: "Verdana", arial, Sans-Serif;
+		font-size: 0.75em;
+		text-align: left;
+		background-color: #FFA347;
+		padding-bottom: 2em;
+	}
+
+	#navItem {
+		background-color: #FF7519;
+		float: right;
+		text-align: center;
+		text-decoration: none;
+	}
+}
+
+@media screen and (max-width: 399px) {
+	* {
+		font-family: arial;
+	}
+
+	body {
+		background-color: #66CDAA;
+	}
+
+	h3 {
+		font-size: 1em;
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+
+	a {
+		text-decoration: none;
+		color: darkblue;
+	}
+
+	#saludo {
+		font-weight: bold;
+		text-align: right;
+	}
+
+	#session {
+		text-align: right;
+	}
+
+	#menu {
+		float: center;
+		background-color: #F2F5A9;
+	}
+
+	#nav {
+		font-family: "Verdana", arial, Sans-Serif;
+		font-size: 0.6em;
+		text-align: left;
+		background-color: #FFA347;
+		padding-bottom: 2em;
+	}
+
+	#navItem {
+		background-color: #FF7519;
+		float: right;
+		text-align: center;
+		text-decoration: none;
+	}
+}
